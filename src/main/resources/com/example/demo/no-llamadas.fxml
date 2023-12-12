@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="132.0" prefWidth="737.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.HelloController">
+   <children>
+      <BorderPane prefHeight="132.0" prefWidth="737.0">
+         <bottom>
+            <Pane prefHeight="71.0" prefWidth="553.0" style="-fx-background-color: #282828;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="btnVolver" layoutX="586.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="30.0" prefWidth="123.0" stylesheets="@css/styling.css" text="Volver" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="botonVolver" />
+                     </styleClass>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </Pane>
+         </bottom>
+         <center>
+            <Pane prefHeight="138.0" prefWidth="737.0" style="-fx-background-color: #363636;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="22.0" layoutY="16.0" prefHeight="30.0" prefWidth="694.0" text="Lo sentimos, no hay resultados para los criterios de búsqueda seleccionados." textAlignment="CENTER" textFill="#aeaeae">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

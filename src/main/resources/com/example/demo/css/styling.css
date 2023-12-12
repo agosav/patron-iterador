@@ -1,0 +1,208 @@
+* {
+    -fx-fondo-oscuro : #1E1E1E;
+    -fx-fondo-menos-oscuro : #282828;
+    -fx-color-principal : #229954;
+    -fx-color-secundario : #7DCEA0;
+    -fx-color-neutro : #919191;
+    -fx-color-neutro-oscuro : #4D5656;
+}
+
+.button
+{
+-fx-background-color : -fx-fondo-menos-oscuro;
+-fx-background-radius :0em;
+}
+.button:hover
+{
+-fx-background-color : -fx-color-neutro-oscuro;
+}
+
+.botonConsultarEncuestas {
+    -fx-background-color: -fx-color-principal;
+}
+
+
+.botonBuscar {
+    -fx-background-radius: 5em;
+    -fx-background-color: -fx-color-neutro-oscuro;
+}
+
+.botonBuscar:hover,
+.botonBuscar:pressed {
+    -fx-background-color: -fx-color-principal;
+}
+
+.botonBuscar:focused, .botonBuscar:armed {
+    -fx-background-color: -fx-color-neutro-oscuro;
+}
+
+.botonCerrar {
+    -fx-background-radius: 5em;
+    -fx-background-color: -fx-color-neutro-oscuro;
+}
+
+.botonCerrar:hover,
+.botonCerrar:pressed {
+    -fx-background-color: red;
+}
+
+.botonCerrar:focused, .botonCerrar:armed {
+    -fx-background-color: -fx-color-neutro-oscuro;
+}
+
+.botonVolver {
+    -fx-background-color: -fx-color-neutro-oscuro;
+}
+
+.botonCSV {
+    -fx-background-color: -fx-color-principal;
+}
+
+.botonImprimir {
+    -fx-background-color: #07396b;
+}
+
+.botonVolver, .botonCSV, .botonImprimir {
+    -fx-background-radius: 5em;
+}
+
+.botonVolver:hover, .botonCSV:hover, .botonImprimir:hover{
+    -fx-background-color: -fx-color-neutro;
+}
+
+
+.button2
+{
+-fx-background-color : #FFFFFF;
+-fx-background-radius :1px 1px 1px 1px;
+-fx-border-color : #CDD1D6;
+-fx-border-width: 1px 1px 1px 1px;
+}
+.button2:hover
+{
+-fx-background-color : #EBE9F6;
+-fx-border-color : #CDD1D6;
+-fx-border-width: 1px 1px 1px 1px;
+}
+
+.button2:pressed
+{
+-fx-background-color : #6F5CC2;
+}
+.button2:focused{
+    -fx-background-color: #6F5CC2;
+    -fx-background-radius :1px 1px 1px 1px;
+    -fx-text-fill: #FFFFFF;
+}
+
+
+
+.date-picker {
+    -fx-font-size: 16;
+    -fx-background-color: -fx-fondo-oscuro;
+    -fx-border: none;
+}
+
+.date-picker .content {
+    -fx-background-radius: 5em;
+}
+
+.date-picker .text-field {
+    -fx-background-radius: 5em 0 0 5em;
+}
+
+.date-picker .arrow-button {
+    -fx-background-color: -fx-color-principal;
+    -fx-text-fill: white;
+    -fx-background-radius: 0 5em 5em 0;
+}
+
+.date-picker .arrow-button:hover {
+    -fx-background-color: -fx-color-secundario;
+}
+
+.date-picker .arrow-button .arrow {
+    -fx-background-color: -fx-fondo-oscuro;
+}
+
+
+.date-picker .cell {
+    -fx-background-color: -fx-fondo-menos-oscuro;
+    -fx-text-fill: white;
+    -fx-border-color: -fx-fondo-oscuro;
+}
+
+.date-picker .cell:hover {
+    -fx-background-color: -fx-color-neutro-oscuro;
+}
+
+.date-picker .cell:focused {
+    -fx-background-color: -fx-color-neutro-oscuro;
+}
+
+.date-picker .day-cell {
+    -fx-text-fill: white;
+}
+
+.date-picker .selected,
+.date-picker .selected:focused,
+.date-picker .day-cell:hover,
+.date-picker .day-cell:focused{
+    -fx-background-color: -fx-color-neutro-oscuro;
+    -fx-text-fill: white;
+}
+
+.date-picker-popup {
+    -fx-background-color: -fx-fondo-menos-oscuro;
+    -fx-border-color: -fx-fondo-menos-oscuro;
+    -fx-text-fill: white;
+}
+
+.date-picker-popup .month-year-pane {
+-fx-text-fill: white;
+    -fx-background-color: -fx-fondo-menos-oscuro;
+}
+
+.date-picker-popup .month-year-pane .label {
+    -fx-text-fill: white;
+}
+
+.date-picker-popup .week-number-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: transparent;
+    -fx-border-color: transparent;
+    -fx-opacity: 0;
+    -fx-min-width: 0;
+    -fx-min-height: 0;
+    -fx-pref-width: 0;
+    -fx-pref-height: 0;
+    -fx-max-width: 0;
+    -fx-max-height: 0;
+}
+
+.date-picker-popup .spinner .button .left-arrow,
+.date-picker-popup .spinner .button .right-arrow {
+    -fx-background-color: white;
+}
+
+.list-cell {
+    -fx-font-family: "System";
+    -fx-font-size: 20px;
+    -fx-background-color: -fx-fondo-oscuro;
+    -fx-text-fill: white;
+
+}
+
+.list-cell:filled:selected:focused, .list-cell:filled:selected {
+    -fx-background-color: -fx-color-principal;
+    -fx-text-fill: white;
+}
+
+.list-cell:even { /* <=== changed to even */
+    -fx-background-color: -fx-fondo-menos-oscuro;
+}
+
+.list-cell:filled:hover {
+    -fx-background-color: -fx-color-secundario;
+    -fx-text-fill: white;
+}

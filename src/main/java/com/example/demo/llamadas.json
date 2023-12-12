@@ -1,0 +1,116 @@
+[
+    {
+      "id": 1,
+      "descripcionOperador": "Descripción del operador 1",
+      "detalleAccionRequerida": "Detalles de la acción requerida 1",
+      "duracion": 120.5,
+      "observacionAuditor": "Observaciones del auditor 1",
+      "cliente": {
+        "dni": 12345678,
+        "nombreCompleto": "Nombre del cliente 1",
+        "nroCelular": "123-456-789"
+      },
+      "encuesta": {
+        "id": 1,
+        "descripcion": "Encuesta 1",
+        "fechaFinVigencia": "2023-11-17T10:15:30",
+        "preguntas": [
+          {
+            "id": 1,
+            "pregunta": "Pregunta 1",
+            "respuestasPosibles": [
+              {"id": 1, "descripcion": "Respuesta 1", "valor": 1},
+              {"id": 2, "descripcion": "Respuesta 2", "valor": 2}
+            ]
+          },
+          {
+            "id": 2,
+            "pregunta": "Pregunta 2",
+            "respuestasPosibles": [
+              {"id": 3, "descripcion": "Respuesta 3", "valor": 3},
+              {"id": 4, "descripcion": "Respuesta 4", "valor": 4}
+            ]
+          }
+        ]
+      },
+      "respuestasDeCliente": [
+        {
+          "id": 1,
+          "fechaDeEncuesta": "2023-11-17T10:15:30",
+          "respuestaSeleccionada": {"id": 1, "descripcion": "Respuesta 1", "valor": 1}
+        },
+        {
+          "id": 2,
+          "fechaDeEncuesta": "2023-11-17T10:15:30",
+          "respuestaSeleccionada": {"id": 3, "descripcion": "Respuesta 3", "valor": 3}
+        }
+      ],
+      "cambiosEstado": [
+        {
+          "fechaHoraInicio": "2023-11-17T10:15:30",
+          "estado": {"id": 1, "nombreEstado": "Iniciada"}
+        },
+        {
+          "fechaHoraInicio": "2023-11-17T10:15:30",
+          "estado": {"id": 2, "nombreEstado": "Finalizada"}
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "descripcionOperador": "Descripción del operador 2",
+      "detalleAccionRequerida": "Detalles de la acción requerida 2",
+      "duracion": 180.75,
+      "observacionAuditor": "Observaciones del auditor 2",
+      "cliente": {
+        "dni": 87654321,
+        "nombreCompleto": "Nombre del cliente 2",
+        "nroCelular": "987-654-321"
+      },
+      "encuesta": {
+        "id": 2,
+        "descripcion": "Encuesta 2",
+        "fechaFinVigencia": "2023-11-17T10:15:30",
+        "preguntas": [
+          {
+            "id": 3,
+            "pregunta": "Pregunta 3",
+            "respuestasPosibles": [
+              {"id": 5, "descripcion": "Respuesta 5", "valor": 5},
+              {"id": 6, "descripcion": "Respuesta 6", "valor": 6}
+            ]
+          },
+          {
+            "id": 4,
+            "pregunta": "Pregunta 4",
+            "respuestasPosibles": [
+              {"id": 7, "descripcion": "Respuesta 7", "valor": 7},
+              {"id": 8, "descripcion": "Respuesta 8", "valor": 8}
+            ]
+          }
+        ]
+      },
+      "respuestasDeCliente": [
+        {
+          "id": 3,
+          "fechaDeEncuesta": "2023-11-17T10:15:30",
+          "respuestaSeleccionada": {"id": 5, "descripcion": "Respuesta 5", "valor": 5}
+        },
+        {
+          "id": 4,
+          "fechaDeEncuesta": "2023-11-17T10:15:30",
+          "respuestaSeleccionada": {"id": 7, "descripcion": "Respuesta 7", "valor": 7}
+        }
+      ],
+      "cambiosEstado": [
+        {
+          "fechaHoraInicio": "2023-11-17T10:15:30",
+          "estado": {"id": 1, "nombreEstado": "Iniciada"}
+        },
+        {
+          "fechaHoraInicio": "2023-11-17T10:15:30",
+          "estado": {"id": 2, "nombreEstado": "Finalizada"}
+        }
+      ]
+    }
+]

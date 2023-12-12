@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="650.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.HelloController">
+   <children>
+      <BorderPane prefHeight="650.0" prefWidth="1200.0">
+         <left>
+            <VBox prefHeight="650.0" prefWidth="201.0" style="-fx-background-color: #282828;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label alignment="CENTER" prefHeight="39.0" prefWidth="88.0" text="Tareas" textFill="#aeaeae">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Label>
+                  <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="254.0" stylesheets="@css/styling.css" text="Generar informe consultas" textFill="WHITE">
+                     <opaqueInsets>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </opaqueInsets>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="254.0" stylesheets="@css/styling.css" text="Generar informe clientes" textFill="WHITE">
+                     <opaqueInsets>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </opaqueInsets>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="254.0" stylesheets="@css/styling.css" text="Consultar encuestas" textFill="WHITE">
+                     <opaqueInsets>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </opaqueInsets>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="botonConsultarEncuestas" />
+                     </styleClass>
+                  </Button>
+                  <Label alignment="CENTER" prefHeight="39.0" prefWidth="99.0" text="Carpetas" textFill="#aeaeae">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Label>
+                  <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="254.0" stylesheets="@css/styling.css" text="/informes-consultas" textFill="WHITE">
+                     <opaqueInsets>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </opaqueInsets>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="254.0" stylesheets="@css/styling.css" text="/informes-clientes" textFill="WHITE">
+                     <opaqueInsets>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </opaqueInsets>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="254.0" stylesheets="@css/styling.css" text="/encuestas-csv" textFill="WHITE">
+                     <opaqueInsets>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </opaqueInsets>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </left>
+         <center>
+            <VBox prefHeight="758.0" prefWidth="515.0" style="-fx-background-color: #1E1E1E;" BorderPane.alignment="CENTER">
+               <children>
+                  <BorderPane prefHeight="792.0" prefWidth="534.0">
+                     <top>
+                        <Pane prefHeight="285.0" prefWidth="322.0" style="-fx-background-color: #1E1E1E;" BorderPane.alignment="CENTER">
+                           <children>
+                              <DatePicker fx:id="fechaDesde" layoutX="57.0" layoutY="178.0" prefHeight="37.0" prefWidth="231.0" promptText="DD/MM/AAAA" stylesheets="@css/styling.css" />
+                              <Label alignment="CENTER" layoutX="100.0" layoutY="139.0" prefHeight="39.0" prefWidth="147.0" text="Fecha desde:" textFill="#aeaeae">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                              </Label>
+                           </children>
+                        </Pane>
+                     </top>
+                     <bottom>
+                        <Pane prefHeight="262.0" prefWidth="322.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <Button fx:id="btnBuscar" layoutX="57.0" layoutY="87.0" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="30.0" prefWidth="232.0" stylesheets="@css/styling.css" text="Buscar" textFill="WHITE">
+                                 <opaqueInsets>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </opaqueInsets>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                                 <styleClass>
+                                    <String fx:value="botonBuscar" />
+                                 </styleClass>
+                              </Button>
+                           </children>
+                        </Pane>
+                     </bottom>
+                     <center>
+                        <Pane prefHeight="221.0" prefWidth="344.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <DatePicker fx:id="fechaHasta" layoutX="57.0" layoutY="52.0" prefHeight="37.0" prefWidth="231.0" promptText="DD/MM/AAAA" stylesheets="@css/styling.css" />
+                              <Label alignment="CENTER" layoutX="109.0" layoutY="14.0" prefHeight="39.0" prefWidth="128.0" text="Fecha hasta:" textFill="#aeaeae">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                              </Label>
+                           </children>
+                        </Pane>
+                     </center>
+                  </BorderPane>
+               </children>
+            </VBox>
+         </center>
+         <right>
+            <VBox prefHeight="650.0" prefWidth="654.0" style="-fx-background-color: #282828;" BorderPane.alignment="CENTER">
+               <children>
+                  <BorderPane prefHeight="758.0" prefWidth="925.0">
+                     <top>
+                        <Pane prefHeight="85.0" prefWidth="925.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <Label alignment="CENTER" layoutX="127.0" layoutY="43.0" prefHeight="39.0" prefWidth="88.0" text="Llamadas:" textFill="#aeaeae">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                              </Label>
+                              <Button fx:id="btnCerrar" layoutX="604.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="36.0" prefWidth="36.0" styleClass="botonCerrar" stylesheets="@css/styling.css" textFill="WHITE">
+                                 <opaqueInsets>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </opaqueInsets>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <font>
+                                    <Font name="Roboto" size="16.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="14.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@images/delete.png" />
+                                       </image>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                           </children>
+                        </Pane>
+                     </top>
+                     <left>
+                        <Pane prefHeight="613.0" prefWidth="127.0" BorderPane.alignment="CENTER" />
+                     </left>
+                     <right>
+                        <Pane prefHeight="505.0" prefWidth="116.0" BorderPane.alignment="CENTER" />
+                     </right>
+                     <bottom>
+                        <Pane prefHeight="77.0" prefWidth="654.0" BorderPane.alignment="CENTER" />
+                     </bottom>
+                     <center>
+                        <ScrollPane prefHeight="381.0" prefWidth="411.0" style="-fx-background-color: #282828;" BorderPane.alignment="CENTER">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="486.0" prefWidth="409.0">
+                                 <children>
+                                    <ListView fx:id="lista" layoutX="-9.0" layoutY="-5.0" onMouseClicked="#abrirVentanaLlamada" prefHeight="498.0" prefWidth="423.0" style="-fx-background-color: #282828;" stylesheets="@css/styling.css" />
+                                 </children>
+                              </AnchorPane>
+                          </content>
+                        </ScrollPane>
+                     </center>
+                  </BorderPane>
+               </children></VBox>
+         </right>
+      </BorderPane>
+   </children>
+</AnchorPane>
