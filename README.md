@@ -4,7 +4,7 @@
 
 Este proyecto se desarrolla en el marco del trabajo final de la materia Diseño de Sistemas de Información de la FRC UTN. En esta entrega nosotros rediseñamos los diagramas de análisis del caso de uso _Consultar Encuesta_ y desarrollamos un programa de aplicación con interfaz gráfica.
 
-# Tecnologías y herramientas utilizadas
+### Tecnologías y herramientas utilizadas
 - **Lenguaje de programación**: Java
 - **Interfaz gráfica**: JavaFX
 
@@ -14,7 +14,7 @@ Este proyecto se desarrolla en el marco del trabajo final de la materia Diseño 
 
 ---
 
-### Caso de uso implementado
+## Caso de uso implementado
 
 ![](/images/caso-de-uso.png)
 
@@ -29,7 +29,7 @@ Ante la necesidad de recorrer elementos, se identificó la utilidad de implement
 
 ---
 
-### Journey
+## Journey
 
 Entra al apartado Consultar encuestas del sistema:
 
